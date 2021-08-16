@@ -1,0 +1,16 @@
+.questionItem{
+    width: 80%;
+    border: 1px solid tomato;
+    border-radius: 10px;
+    margin-bottom: 12px;
+}
+
+.questionItem p{
+    padding-left: 10px;
+    padding-top: 0px;
+    margin: 6px;
+}
+
+p#questionTitle{
+    font-weight: 700;
+}
