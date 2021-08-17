@@ -11,10 +11,7 @@ export const SignIn = (props) =>{
   },[]);
 
 
-
   const [users, setUsers] = useState([]);
-  // const [userEmail, setUserEmail] = useState('');
-  // const [userPassword, setUserPassword] = useState('');
 
 
   const fetchUsers = async () => {
@@ -37,21 +34,16 @@ export const SignIn = (props) =>{
 
      if(specificUser.trainee_password === uPassword){
        props.authenticate(true);
-        // window.location = "/";
        
     }
     
     }catch(err){
       console.log(err.message);
     }
-    // console.log('Kking Goerge');
-    // window.location = "/shop";
   }
 
   const settingUserEmail = (e) => {
-    // setUserEmail(e.target.value);
-    // console.log(userEmail);
-    // console.log(e.target.value);
+ 
 
     uEmail = e.target.value;
   }
