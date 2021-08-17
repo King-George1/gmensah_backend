@@ -51,7 +51,7 @@ export const HomePage = (props) => {
 
           {
             questions.map(question => (
-              <QuestionComponent questionTitle={question.question_title} questionBody={question.description} key={question.question_id}/>
+              <QuestionComponent questionTitle={question.question_title} questionBody={question.description} key={question.question_id} questionTags={question.tags}/>
             ))
             
           }

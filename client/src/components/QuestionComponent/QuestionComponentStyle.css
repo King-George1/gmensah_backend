@@ -3,6 +3,7 @@
     border: 1px solid tomato;
     border-radius: 10px;
     margin-bottom: 12px;
+    max-height: 150px;
 }
 
 .questionItem p{
@@ -13,4 +14,35 @@
 
 p#questionTitle{
     font-weight: 700;
+
+}
+
+
+@media only screen and (max-width: 700px){
+    p#questionBody{
+     /* max-height  : 3rem; */
+     display: inline-block;
+     display: -webkit-box;
+     max-width: 400px;
+     -webkit-line-clamp: 3;
+     -webkit-box-orient: vertical;
+     overflow: hidden;
+     text-overflow: ellipsis;
+     
+            
+    }
+
+    /* p#questionBody{
+    max-height: 4rem;      
+    } */
+
+    p#questionTitle{
+     display: inline-block;
+     display: -webkit-box;
+     max-width: 400px;
+     -webkit-line-clamp: 3;
+     -webkit-box-orient: vertical;
+     overflow: hidden;
+     text-overflow: ellipsis;
+    }
 }
