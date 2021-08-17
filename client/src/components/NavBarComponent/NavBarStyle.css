@@ -1,14 +1,12 @@
 nav{
     margin-top: 20px;
     margin-left: 20px;
-    display: grid;
-    grid-template-columns: 40% 20% 20% 10% 10%;
 }
 
 nav div{   
     color: red;
-    /* font-weight: 700; */
-    font-size: 18px;
+    font-size: 1.2rem;
+    font-weight: 500;
 }
 
 a:link{
@@ -19,4 +17,18 @@ a:link{
     font-size: 25px;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-weight: 900;
+    text-align: center;
+    width: 100%;
+}
+
+span#division{
+    text-align: center;
+    display: grid;
+    grid-template-columns: 22% 30% 22% 25%;
+}
+
+@media only screen and (max-width: 700px){
+    #logo{
+        display: inline-block; 
+    }
 }

@@ -6,7 +6,7 @@
 .search {
     width: 80%;
     display: grid;
-    grid-template-columns: 50% 30%;
+    grid-template-columns: 50% 50%;
   }
 
   button#clearSearch{
@@ -64,3 +64,26 @@
 /* .trendingTopics{
     border: 1px solid tomato;
 } */
+
+@media only screen and (max-width: 700px) {
+  .search {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 100% 
+  }
+  button#clearSearch{
+    margin-left: 0px;
+    margin-top: 0px;
+    margin-bottom: 12px;
+  }
+  input.searchTerm{
+    width: 80%;
+    margin-bottom: 8px;
+    
+  }
+  
+  .exploreContainer h1{
+    text-align: center;
+    width: 85%;
+  }
+}

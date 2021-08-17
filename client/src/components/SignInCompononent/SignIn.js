@@ -1,7 +1,6 @@
 import React, {useState, useEffect} from 'react';
 import './SignInStyle.css';
 
-
 let uEmail = '';
 let uPassword = '';
 export const SignIn = (props) =>{
@@ -37,8 +36,9 @@ export const SignIn = (props) =>{
       let specificUser = users.find(x => x.trainee_email === uEmail);
 
      if(specificUser.trainee_password === uPassword){
-      props.authenticate(true);
-      window.location = "/";
+       props.authenticate(true);
+        // window.location = "/";
+       
     }
     
     }catch(err){
