@@ -33,7 +33,13 @@ create table Trainee(
 	trainee_email VARCHAR(50) NOT NULL,
     trainee_password VARCHAR(25) NOT NULL,
     trainee_firstname VARCHAR(20) NOT NULL,
-    trainee_lastname VARCHAR(20) NOT NULL
+    trainee_lastname VARCHAR(20) NOT NULL,
+	 
 );
 
 insert into Trainee (trainee_email, trainee_password, trainee_firstname, trainee_lastname) VALUES ('peter.mason@amalitech.org', '234erdfte', 'Peter', 'Mason'), ('anita.ankrah@amalitech.org', 'Anikra98', 'Anita', 'Ankrah'), ('james.rusty@amalitech.org', 'rusja676', 'James', 'Rusty'), ('hello.word@amalitech.org', 'hes8989', 'Hello', 'World'), ('daniel.peters@amalitech.org', '234ettte', 'Daniel', 'Peters');
+
+ALTER TABLE Trainee ADD COLUMN trainee_question INT;
+
+ALTER TABLE Trainee ALTER COLUMN trainee_question ADD CONSTRAINT ghj REFERENCES Questions(question_id);
+
